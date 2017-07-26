@@ -65,7 +65,7 @@ bash_prompt() {
   local BGM="\[\033[45m\]"
   local BGC="\[\033[46m\]"
   local BGW="\[\033[47m\]"
-  
+
   PS1="$B\$(__rbenv_ruby_version)$G\$(__nodenv_node_version)$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
 }
 
