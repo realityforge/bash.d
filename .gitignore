@@ -1,1 +1,3 @@
 cache
+environments.d/*.*.sh
+environments.d/*-*.sh
