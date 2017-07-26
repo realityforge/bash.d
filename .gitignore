@@ -1,3 +1,6 @@
 cache
 environments.d/*.*.sh
 environments.d/*-*.sh
+chef_user.sh
+gpg.sh
+jxbrowser.sh
