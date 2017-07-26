@@ -10,6 +10,7 @@ alias kdbd=data_bag_destination
 alias kdbdb=data_bag_database
 alias kdbs=data_bag_services
 alias kdbt=data_bag_template
+alias knife='bundle exec knife'
 alias kcb='knife cookbook upload'
 alias kenv='knife environment from file'
 alias kdiff='ruby xpiceweasel.rb --diff'
