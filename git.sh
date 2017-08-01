@@ -7,6 +7,7 @@ if [ ! -f "${DIR}/cache/git.1" ]; then
   git config --global user.name "Peter Donald"
   git config --global user.email peter@realityforge.org
   git config --global core.autocrlf false
+  git config --global core.safecrlf false
   git config --global commit.gpgsign true
   git config --global gui.gcwarning false
   git config --global push.default simple
