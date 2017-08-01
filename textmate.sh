@@ -1,1 +1,2 @@
-export EDITOR="/usr/local/bin/mate -w"
+export EDITOR="mate -w"
+alias mate=/Applications/TextMate.app/Contents/Resources/mate
