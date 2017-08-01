@@ -1,5 +1,5 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [ ! -f "${DIR}/cache/git.1" ]; then
+if [ ! -f "${DIR}/cache/git.2" ]; then
   git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   git config --global alias.expire-branches '!git branch  --no-color | grep -v \* | grep -v master | xargs git branch -d'
   git config --global alias.expire-branches-force '!git branch  --no-color | grep -v \* | grep -v master | xargs git branch -D'
@@ -15,6 +15,6 @@ if [ ! -f "${DIR}/cache/git.1" ]; then
   git config --global core.excludesfile $DIR/git/gitignore_global
 	
   mkdir -p ${DIR}/cache
-  touch ${DIR}/cache/git.1
+  touch ${DIR}/cache/git.2
 fi
 	
