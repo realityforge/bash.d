@@ -18,3 +18,4 @@ if [ ! -f "${DIR}/cache/git.2" ]; then
   touch ${DIR}/cache/git.2
 fi
 	
+export GIT_EDITOR="/Applications/TextMate.app/Contents/Resources/mate -w -wl1"
