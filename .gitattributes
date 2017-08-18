@@ -1,0 +1,6 @@
+# DO NOT EDIT: File is auto-generated
+* -text
+*.md text
+*.sh text
+*.sh text eol=lf
+.gitignore text
