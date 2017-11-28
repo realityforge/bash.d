@@ -11,9 +11,9 @@ if [ ! -f "${DIR}/cache/git.2" ]; then
   git config --global commit.gpgsign true
   git config --global gui.gcwarning false
   git config --global push.default simple
-  
+
   git config --global core.excludesfile $DIR/git/gitignore_global
-	
+
   mkdir -p ${DIR}/cache
   touch ${DIR}/cache/git.2
 fi
