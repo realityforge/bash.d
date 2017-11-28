@@ -56,4 +56,3 @@ _environment() {
    COMPREPLY=( $( compgen -W "`find environments/*.json -exec basename {} \;`" -- $word ) )
 }
 complete -F _environment kenv
-

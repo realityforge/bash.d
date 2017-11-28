@@ -19,5 +19,5 @@ if [ ! -f "${DIR}/cache/git.3" ]; then
   mkdir -p ${DIR}/cache
   touch ${DIR}/cache/git.3
 fi
-	
+
 export GIT_EDITOR="/Applications/TextMate.app/Contents/Resources/mate -w -wl1"
