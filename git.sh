@@ -20,4 +20,4 @@ if [ ! -f "${DIR}/cache/git.3" ]; then
   touch ${DIR}/cache/git.3
 fi
 
-export GIT_EDITOR="/Applications/TextMate.app/Contents/Resources/mate -w -wl1"
+export GIT_EDITOR="code --wait"
