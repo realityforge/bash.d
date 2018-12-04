@@ -66,7 +66,12 @@ bash_prompt() {
   local BGC="\[\033[46m\]"
   local BGW="\[\033[47m\]"
 
-  PS1="$B\$(__rbenv_ruby_version)$G\$(__nodenv_node_version)$W:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
+  local HEXAGON="⬡"
+  #local BLACK_HEXAGON="⬢"
+  #local GEM="💎"
+  #local GEM="⬦"
+  local GEM="⬩"
+  PS1="$R$GEM $EMR\$(__rbenv_ruby_version)$G$HEXAGON $EMG\$(__nodenv_node_version)$EMW:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
