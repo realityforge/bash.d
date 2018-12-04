@@ -1,0 +1,1 @@
+export EXPAND_DEPS=true
