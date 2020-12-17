@@ -2,7 +2,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [ ! -f "${DIR}/cache/git.4" ]; then
   git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   git config --global alias.expire-branches '!git branch  --no-color | grep -v \* | grep -v -x "  master" | grep -v -x "  upstream" | xargs git branch -d'
-  git config --global alias.expire-branches-force '!git branch  --no-color | grep -v \* | grep -v -x "  master" | grep -v -x "  upstream | xargs git branch -D'
+  git config --global alias.expire-branches-force '!git branch --no-color | grep -v \* | grep -v -x "  master" | grep -v -x "  upstream" | xargs git branch -D'
 
   git config --global user.name "Peter Donald"
   git config --global user.email peter@realityforge.org
