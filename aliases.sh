@@ -1,3 +1,5 @@
+alias g="git"
+alias b="bundle exec buildr"
 alias buildr="bundle exec buildr"
 alias rake="bundle exec rake"
 alias rspec="bundle exe rspec"
