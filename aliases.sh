@@ -10,6 +10,7 @@ alias bzl-pretty="buildifier \$(find . -type f \\( -iname BUILD -or -iname BUILD
 alias bazel="bazelisk"
 alias braidup="git add . && git stash && braid update && git stash pop && git reset"
 
+alias geany="/Applications/Geany.app/Contents/MacOS/geany"
 alias devdown="docker stop sqlserver; docker stop keycloak2 2> /dev/null; docker stop keycloak 2> /dev/null;  pg_ctl -D /usr/local/var/postgres stop  2> /dev/null"
 
 alias devup_delwp="docker start sqlserver && docker start keycloak"
