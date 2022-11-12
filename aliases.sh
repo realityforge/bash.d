@@ -12,6 +12,4 @@ alias braidup="git add . && git stash && braid update && git stash pop && git re
 
 alias devdown="docker stop sqlserver; docker stop keycloak2 2> /dev/null; docker stop keycloak 2> /dev/null;  pg_ctl -D /usr/local/var/postgres stop  2> /dev/null"
 
-alias devup_delwp="docker start sqlserver && docker start keycloak"
-
-alias devup_arena="docker start sqlserver && docker start keycloak2 && pg_ctl -D /usr/local/var/postgres start"
+alias devup="docker start sqlserver && docker start keycloak"
