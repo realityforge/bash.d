@@ -20,6 +20,12 @@ function __rbenv_ruby_version {
   [ "$version" != "" ] && echo "$version "
 }
 
+function __java_version {
+  local j_version=$(java -version 2>&1)
+  j_version=$(echo $j_version | sed 's/java version "//g' | sed 's/\.[0-9a-zA-Z_]*".*//g')
+  [ "$j_version" != "" ] && echo "$j_version "
+}
+
 function __nodenv_node_version {
   local version=$(nodenv version-name 2>&1)
   version=$(echo $version | sed 's/nodenv.*\`//g'  | sed "s/'.*//g")
@@ -71,7 +77,7 @@ bash_prompt() {
   #local GEM="💎"
   #local GEM="⬦"
   #local GEM="⬩"
-  PS1="${R}R $EMR\$(__rbenv_ruby_version)${G}N $EMG\$(__nodenv_node_version)$EMW:$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
+  PS1="${R}R $EMR\$(__rbenv_ruby_version)${G}N $EMG\$(__nodenv_node_version)${EMW}J \$(__java_version):$EMY\w$EMW\$(__git_branch)$EMY\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
