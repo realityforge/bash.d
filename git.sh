@@ -9,6 +9,7 @@ if [ ! -f "${DIR}/cache/git.4" ]; then
   git config --global core.autocrlf false
   git config --global core.safecrlf false
   git config --global commit.gpgsign true
+  git config --global gpg.program /usr/local/MacGPG2/bin/gpg
   git config --global gui.gcwarning false
   git config --global push.default simple
 
