@@ -1,1 +1,1 @@
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_321)
+export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.2)
